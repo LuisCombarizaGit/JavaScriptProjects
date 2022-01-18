@@ -17,14 +17,19 @@ function countdown() {
   const seconds = Math.floor(totalseconds) % 60;
 
   daysEI.innerHTML = days;
-  hoursEI.innerHTML = hours;
-  minsEI.innerHTML = mins;
-  secondsEI.innerHTML = seconds;
+  hoursEI.innerHTML = formatTime(hours);
+  minsEI.innerHTML = formatTime(mins);
+  secondsEI.innerHTML = formatTime(seconds);
 
   console.log(days, hours, mins, seconds);
+}
+
+function formatTime(time) {
+  return time < 10 ? `0${time}` : time;
 }
 
 // Initial Call
 countdown();
 
 // Callback function to generate new digits
+setInterval(countdown, 1000);
