@@ -7,14 +7,14 @@
 body {
   background: linear-gradient(
     90deg,
-    #530357,
-    #4c3683,
-    #335ca8,
-    #007fc4,
-    #00a1d6,
-    #00c1e0,
-    #5ae1e7,
-    #96ffec
+    #dbdbdb,
+    #cec8e1,
+    #bfb5e7,
+    #b0a2ec,
+    #9e90f1,
+    #8a7df6,
+    #726cfb,
+    #525aff
   );
   display: flex;
   align-items: center;
@@ -28,7 +28,7 @@ body {
 .quiz-container {
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 0 10px 5px rgba(4, 15, 49, 0.58);
+  box-shadow: 0 0 10px 5px rgba(4, 15, 49, 0.327);
   overflow: hidden;
   width: 600px;
   max-width: 100%;
@@ -38,9 +38,18 @@ body {
   padding: 4rem;
 }
 
+h2 {
+  margin: 0;
+}
+
 ul {
   list-style-type: none;
   padding: 0;
+}
+
+ul li {
+  font-size: 1.1rem;
+  margin: 1rem 0;
 }
 
 button {
